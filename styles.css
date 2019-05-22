@@ -1,0 +1,78 @@
+#main-field {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    margin: 100px auto;
+}
+
+#game-field {
+    width: 360px;
+    height: 366px;
+    
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#start_game {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+}
+
+.colon_1 {
+    width: 90px;
+    height: 360px;
+    position: absolute;
+}
+
+.colon_2 {
+    width: 90px;
+    height: 360px;
+    position: absolute;
+    left: 90px;
+}
+
+.colon_3 {
+    width: 90px;
+    height: 360px;
+    position: absolute;
+    left: 180px;
+}
+
+
+.colon_4 {
+    width: 90px;
+    height: 360px;
+    position: absolute;
+    left: 270px;
+}
+
+.squad {
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+#out{
+    font-size: 26px;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+
+.active{
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
