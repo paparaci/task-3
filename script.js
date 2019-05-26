@@ -69,6 +69,10 @@ start.onclick = function() { //по клику запускается функц
 
     cards.forEach(card => card.addEventListener('click', flipCard)); //запускаем функцию переворота по клику по любой карте в массиве
 }
+document.getElementById('reset').onclick=function(){
+    window.location.reload();
+}
+
 
 
 
