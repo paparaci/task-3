@@ -77,11 +77,7 @@ document.getElementById('start').onclick = function () {   //по клику з�
     console.log(cards);  //проверка для себя где какие карты находятся 
 
     cards.forEach(card => card.addEventListener('click', flipCard)); //запускаем функцию переворота по клику по любой карте в массиве
-    
-    if(cards){
-        clearTimeout(timer);
-        alert ('Успешно');
-    }
+
     
 }
 
