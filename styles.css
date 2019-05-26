@@ -1,71 +1,68 @@
-#main-field {
-    width: 400px;
-    height: 500px;
-    border: 1px solid black;
-    position: relative;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+}
+#game{
+    width: 408px;
+    height: 408px;
     margin: 100px auto;
-}
-
-#game-field {
-    width: 360px;
-    height: 366px;
+    perspective: 1000px;
+    display: flex;
+    flex-wrap: wrap;
     
-    position: absolute;
-    left: 20px;
-    top: 20px;
 }
-
-#start_game {
-    position: absolute;
-    bottom: 80px;
-    left: 20px;
-}
-
-.colon_1 {
-    width: 90px;
-    height: 360px;
-    position: absolute;
-}
-
-.colon_2 {
-    width: 90px;
-    height: 360px;
-    position: absolute;
-    left: 90px;
-}
-
-.colon_3 {
-    width: 90px;
-    height: 360px;
-    position: absolute;
-    left: 180px;
-}
-
-
-.colon_4 {
-    width: 90px;
-    height: 360px;
-    position: absolute;
-    left: 270px;
-}
-
-.squad {
-    width: 90px;
-    height: 90px;
-    border: 1px solid rgba(128, 128, 128, 0.5);
+.box{
+    width: 25%;
+    height: 25%;
+    border: 1px solid black;
     cursor: pointer;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    background: white;
+    
+}
+.box:active{
+    transform: scale(.97);
+    transition: transform .2s;
 }
 
-#out{
-    font-size: 26px;
+.box.flip{
+    transform: rotateY(180deg);
+}
+.front-face,
+.back-face{
+    width: 100%;
+    height: 100%;   
+    backface-visibility: hidden;
     position: absolute;
-    bottom: 5px;
-    left: 20px;
+}
+.front-face{
+    transform: rotateY(180deg);
+}
+button{
+    position: absolute;
+    top: 55%;
+    left: 36%;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+p{
+    position: absolute;
+    left: 36%;
+    top: 62%;
+    font-size: 36px;
 }
 
-.active{
-    background: black;
-}
+
+
 
 
 
