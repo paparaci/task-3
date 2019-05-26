@@ -51,15 +51,19 @@ button{
     top: 55%;
     left: 40%;
     cursor: pointer;
-    padding: 10px;
-    
+    padding: 10px; 
 }
+#reset{
+    margin-left: 150px;
+}
+
 p{
     position: absolute;
     left: 40%;
     top: 62%;
     font-size: 36px;
 }
+
 
 
 
