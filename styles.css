@@ -49,14 +49,14 @@ body{
 button{
     position: absolute;
     top: 55%;
-    left: 36%;
+    left: 40%;
     cursor: pointer;
     padding: 10px;
     
 }
 p{
     position: absolute;
-    left: 36%;
+    left: 40%;
     top: 62%;
     font-size: 36px;
 }
